@@ -39,9 +39,10 @@ def lineCreateRender(height):
         line.append(["#"])
     for i in line:
         print(i)
-def getDistanceToWall(xpos, ypos):
-    for i in range():
-        if grid[cameraY + i][cameraX] == 1:
+    os.system("cls")
+def getDistanceToWall(xpos, ypos): #currently this is a terrible way of doing this
+    for i in range(len(grid[ypos])):
+        if grid[ypos - i][xpos] == 1:
             return i
 
 def basicLineLengthRender():
@@ -58,6 +59,7 @@ while True:
         if grid[cameraY - 1][cameraX] != 1:
             cameraY -= 1
         printGrid()
+        # print(getDistanceToWall(cameraX,cameraY))
         wait(0.2)
     if keyboard.is_pressed("s"):
         grid[cameraY][cameraX] = 0
@@ -77,4 +79,4 @@ while True:
             cameraX += 1
         printGrid()
         wait(0.2)
-# lineCreateRender(6)
+    # lineCreateRender(getDistanceToWall(cameraX, cameraY))
