@@ -1,4 +1,9 @@
 # row, column
+#TODO
+# triangles
+# rotation
+# floor + celing
+#  larger grid
 import os
 import keyboard
 import time
@@ -16,7 +21,7 @@ def printGrid():
     grid[cameraY][cameraX] = 2
     for i in grid:
         print(i)
-
+    pass
 
 grid[cameraY][cameraX] = 2
 
