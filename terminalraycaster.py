@@ -4,6 +4,8 @@
 # rotation
 # floor + celing
 #  larger grid
+# find terminal size
+# Use more ASCII/ UTF 8 chars for walls
 import os
 import keyboard
 import time
